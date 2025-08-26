@@ -1,0 +1,140 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Students Loan Trust Fund - Application Form</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 850px;
+      width: 100%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      color: #003366;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    h2 {
+      color: #003366;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 5px;
+      font-size: 1.2rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00A859;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #008F4C;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="download.jpeg" alt="SLTF Logo" />
+      <h1>Students Loan Trust Fund<br>Application Form</h1>
+    </header><form onsubmit="submitForm(event)">
+  <!-- Personal Information -->
+  <h2>Personal Information</h2>
+  <input type="text" name="fullName" placeholder="Full Name" required />
+  <input type="date" name="dob" required />
+  <input type="text" name="ghanaCard" placeholder="Ghana Card Number" required />
+
+  <!-- Contact Information -->
+  <h2>Contact Information</h2>
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="tel" name="phone" placeholder="Phone Number" required />
+  <input type="text" name="address" placeholder="Residential Address" />
+
+  <!-- Academic Information -->
+  <h2>Academic Information</h2>
+  <input type="text" name="institution" placeholder="Institution Name" required />
+  <input type="text" name="program" placeholder="Program of Study" required />
+  <input type="text" name="studentId" placeholder="Student ID Number" required />
+
+  <!-- Loan Details -->
+  <h2>Loan Details</h2>
+  <input type="number" name="amount" placeholder="Amount Requested (GHS)" required />
+  <input type="text" name="ezwich, GCB Student account or Mobile Money account " placeholder="E-zwich Number  GCB Student account or Mobile Money account" required />
+
+
+  <!-- Upload Documents -->
+  <h2>Upload Documents</h2>
+  <input type="file" name="admissionLetter" />
+  <input type="file" name="studentIdCard" />
+  <input type="file" name="ghanacard" />
+
+  <!-- Declaration -->
+  <div class="checkbox">
+    <input type="checkbox" required />
+    <label>I confirm that all information provided is true and correct.</label>
+  </div>
+
+  <button type="submit">Submit Application</button>
+</form>
+
+<footer>
+  Students Loan Trust Fund – Ghana © 2025
+</footer>
+
+  </div>  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("✅ Application Submitted Successfully! Our team will review your details.");
+    }
+  </script></body>
+</html>
